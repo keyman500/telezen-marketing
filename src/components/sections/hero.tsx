@@ -23,7 +23,7 @@ function HeroPill() {
         📣 Announcement
       </div>
       <p className="text-xs font-medium text-primary sm:text-sm">
-        Introducing Acme.ai
+        Introducing Telezen AI
       </p>
       <svg
         width="12"
@@ -55,7 +55,7 @@ function HeroTitles() {
           staggerChildren: 0.2,
         }}
       >
-        {["Automate", "your", "workflow", "with AI"].map((text, index) => (
+        {["Automate", "your", "phone", "calls", "with", "AI"].map((text, index) => (
           <motion.span
             key={index}
             className="inline-block px-1 md:px-2 text-balance font-semibold"
@@ -81,7 +81,7 @@ function HeroTitles() {
           ease,
         }}
       >
-        No matter what problem you have, our AI can help you solve it.
+        Seamless Conversations: Let AI Handle Your Calls.
       </motion.p>
     </div>
   );
@@ -104,17 +104,18 @@ function HeroCTA() {
           )}
         >
           <Icons.logo className="h-6 w-6" />
-          Get started for free
+          {/* Get started for free */}
+          Sign up for the waitlist
         </Link>
       </motion.div>
-      <motion.p
+      {/* <motion.p
         className="mt-5 text-sm text-muted-foreground"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.0, duration: 0.8 }}
       >
         7 day free trial. No credit card required.
-      </motion.p>
+      </motion.p> */}
     </>
   );
 }
@@ -129,8 +130,8 @@ function HeroImage() {
     >
       <HeroVideoDialog
         animationStyle="from-center"
-        videoSrc="https://www.youtube.com/embed/qh3NGpYRG3I?si=4rb-zSdDkVK9qxxb"
-        thumbnailSrc="/dashboard.png"
+        videoSrc="https://www.youtube.com/watch?v=447iM8vN_bE"
+        thumbnailSrc="/hero-image.png"
         thumbnailAlt="Hero Video"
         className="border rounded-lg shadow-lg max-w-screen-lg mt-16"
       />

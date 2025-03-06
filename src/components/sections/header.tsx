@@ -6,8 +6,11 @@ import Menu from "@/components/menu";
 import { buttonVariants } from "@/components/ui/button";
 import { siteConfig } from "@/lib/config";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import telezenLogo from "../../../public/telezen-logo.png";
+
 
 export default function Header() {
   const [addBorder, setAddBorder] = useState(false);
@@ -40,7 +43,12 @@ export default function Header() {
           title="brand-logo"
           className="relative mr-6 flex items-center space-x-2"
         >
-          <Icons.logo className="w-auto h-[40px]" />
+          {/* <Icons.logo className="w-auto h-[40px]" /> */}
+          <Image
+            src={telezenLogo}
+            alt="Telezen Logo"
+            className="w-auto h-[40px]"
+          />
           <span className="font-bold text-xl">{siteConfig.name}</span>
         </Link>
 
@@ -65,7 +73,7 @@ export default function Header() {
                 )}
               >
                 <Icons.logo className="h-6 w-6" />
-                Get Started for Free
+                Sign up for the waitlist
               </Link>
             </div>
           </div>
