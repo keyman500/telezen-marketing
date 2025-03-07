@@ -112,20 +112,20 @@ export default function WaitlistPage() {
                 <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-green-100">
                   <Icons.check className="h-10 w-10 text-green-600" />
                 </div>
-                <CardTitle className="text-xl sm:text-2xl font-bold">You're on the list!</CardTitle>
+                <CardTitle className="text-xl sm:text-2xl font-bold">You&apos;re on the list!</CardTitle>
                 <CardDescription className="text-muted-foreground text-sm sm:text-base">
-                  Thank you for joining our waitlist. We'll notify you when we're ready to launch.
+                  Thank you for joining our waitlist. We&apos;ll notify you when we&apos;re ready to launch.
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-6">
                 <div className="space-y-4 text-sm">
                   <div className="flex gap-2">
                     <Icons.check className="h-5 w-5 text-primary flex-shrink-0" />
-                    <p>We've sent a confirmation email to your inbox</p>
+                    <p>We&apos;ve sent a confirmation email to your inbox</p>
                   </div>
                   <div className="flex gap-2">
                     <Icons.check className="h-5 w-5 text-primary flex-shrink-0" />
-                    <p>You'll be among the first to access our platform</p>
+                    <p>You&apos;ll be among the first to access our platform</p>
                   </div>
                   <div className="flex gap-2">
                     <Icons.check className="h-5 w-5 text-primary flex-shrink-0" />
