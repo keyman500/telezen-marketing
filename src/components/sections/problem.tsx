@@ -1,34 +1,52 @@
 import BlurFade from "@/components/magicui/blur-fade";
 import Section from "@/components/section";
 import { Card, CardContent } from "@/components/ui/card";
-import { Brain, Shield, Zap } from "lucide-react";
+import { BarChart, CheckCircle, Clock, Link, Phone, Shield } from "lucide-react";
 
 const problems = [
   {
-    title: "Data Overload",
+    title: "24/7 Availability",
     description:
-      "Businesses struggle to make sense of vast amounts of complex data, missing out on valuable insights that could drive growth and innovation.",
-    icon: Brain,
+      "With AI handling your calls, you can be available around the clock, ensuring no opportunity is missed, even outside of business hours.",
+    icon: Clock,
   },
   {
-    title: "Slow Decision-Making",
+    title: "Automated Efficiency",
     description:
-      "Traditional data processing methods are too slow, causing businesses to lag behind market changes and miss crucial opportunities.",
-    icon: Zap,
+      "Automate routine inquiries and appointment scheduling, freeing up your time for more critical tasks.",
+    icon: Phone,
   },
   {
-    title: "Data Security Concerns",
+    title: "Scalability",
     description:
-      "With increasing cyber threats, businesses worry about the safety of their sensitive information when adopting new technologies.",
+      "Easily scale your call management as your business grows, with AI handling increased call volumes effortlessly.",
+    icon: CheckCircle,
+  },
+  {
+    title: "Real-Time Insights",
+    description:
+      "Gain actionable insights from call data analytics, helping you understand customer needs and improve service.",
+    icon: BarChart,
+  },
+  {
+    title: "Seamless Integration",
+    description:
+      "Integrate effortlessly with your existing tools, enhancing your workflow without disruption.",
+    icon: Link,
+  },
+  {
+    title: "Enhanced Security",
+    description:
+      "Protect sensitive customer data with AI-driven security measures, ensuring compliance and peace of mind.",
     icon: Shield,
   },
-];
+];  
 
 export default function Component() {
   return (
     <Section
-      title="Problem"
-      subtitle="Manually entering your data is a hassle."
+      title="Key Benefits of AI Call Management"
+      subtitle="Transforming how you manage calls with AI."
     >
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
         {problems.map((problem, index) => (
