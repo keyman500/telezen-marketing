@@ -9,82 +9,99 @@ export const siteConfig = {
   name: "Telezen",
   description: "Automate your phone calls with AI",
   url: process.env.NEXT_PUBLIC_APP_URL || "http://localhost:3000",
-  keywords: ["SaaS", "Template", "Next.js", "React", "Tailwind CSS"],
+  keywords: ["Phone Calls", "AI", "Automations"],
   links: {
-    email: "support@acme.ai",
-    twitter: "https://twitter.com/magicuidesign",
+    email: "support@telezen-ai.com",
+   // twitter: "https://twitter.com/magicuidesign",
     discord: "https://discord.gg/87p2vpsat5",
     github: "https://github.com/magicuidesign/magicui",
-    instagram: "https://instagram.com/magicuidesign/",
+   // instagram: "https://instagram.com/magicuidesign/",
   },
   header: [
+    // {
+    //   trigger: "Features",
+    //   content: {
+    //     main: {
+    //       icon: <Icons.logo className="h-6 w-6" />,
+    //       title: "AI-Powered Automation",
+    //       description: "Streamline your workflow with intelligent automation.",
+    //       href: "#",
+    //     },
+    //     items: [
+    //       {
+    //         href: "#",
+    //         title: "Task Automation",
+    //         description: "Automate repetitive tasks and save time.",
+    //       },
+    //       {
+    //         href: "#",
+    //         title: "Workflow Optimization",
+    //         description: "Optimize your processes with AI-driven insights.",
+    //       },
+    //       {
+    //         href: "#",
+    //         title: "Intelligent Scheduling",
+    //         description: "AI-powered scheduling for maximum efficiency.",
+    //       },
+    //     ],
+    //   },
+    // },
+    // {
+    //   trigger: "Solutions",
+    //   content: {
+    //     items: [
+    //       {
+    //         title: "For Small Businesses",
+    //         href: "#",
+    //         description: "Tailored automation solutions for growing companies.",
+    //       },
+    //       {
+    //         title: "Enterprise",
+    //         href: "#",
+    //         description: "Scalable AI automation for large organizations.",
+    //       },
+    //       {
+    //         title: "Developers",
+    //         href: "#",
+    //         description: "API access and integration tools for developers.",
+    //       },
+    //       {
+    //         title: "Healthcare",
+    //         href: "#",
+    //         description: "Specialized automation for healthcare workflows.",
+    //       },
+    //       {
+    //         title: "Finance",
+    //         href: "#",
+    //         description: "AI-driven process automation for financial services.",
+    //       },
+    //       {
+    //         title: "Education",
+    //         href: "#",
+    //         description:
+    //           "Streamline administrative tasks in educational institutions.",
+    //       },
+    //     ],
+    //   },
+    // },
+
     {
-      trigger: "Features",
-      content: {
+      trigger: undefined,
+      content : {
         main: {
-          icon: <Icons.logo className="h-6 w-6" />,
-          title: "AI-Powered Automation",
-          description: "Streamline your workflow with intelligent automation.",
-          href: "#",
+          icon: undefined,
+          title: undefined,
+          description: undefined,
+          href: undefined,
         },
         items: [
           {
-            href: "#",
-            title: "Task Automation",
-            description: "Automate repetitive tasks and save time.",
-          },
-          {
-            href: "#",
-            title: "Workflow Optimization",
-            description: "Optimize your processes with AI-driven insights.",
-          },
-          {
-            href: "#",
-            title: "Intelligent Scheduling",
-            description: "AI-powered scheduling for maximum efficiency.",
+            title: undefined,
+            href: undefined,
+            description: undefined,
           },
         ],
       },
-    },
-    {
-      trigger: "Solutions",
-      content: {
-        items: [
-          {
-            title: "For Small Businesses",
-            href: "#",
-            description: "Tailored automation solutions for growing companies.",
-          },
-          {
-            title: "Enterprise",
-            href: "#",
-            description: "Scalable AI automation for large organizations.",
-          },
-          {
-            title: "Developers",
-            href: "#",
-            description: "API access and integration tools for developers.",
-          },
-          {
-            title: "Healthcare",
-            href: "#",
-            description: "Specialized automation for healthcare workflows.",
-          },
-          {
-            title: "Finance",
-            href: "#",
-            description: "AI-driven process automation for financial services.",
-          },
-          {
-            title: "Education",
-            href: "#",
-            description:
-              "Streamline administrative tasks in educational institutions.",
-          },
-        ],
-      },
-    },
-    {
       href: "/blog",
       label: "Blog",
     },

@@ -59,14 +59,14 @@ export default function Header() {
             </nav>
 
             <div className="gap-2 flex">
-              <Link
+              {/* <Link
                 href="/login"
                 className={buttonVariants({ variant: "outline" })}
               >
                 Login
-              </Link>
+              </Link> */}
               <Link
-                href="/signup"
+                href="/waitlist"
                 className={cn(
                   buttonVariants({ variant: "default" }),
                   "w-full sm:w-auto text-background flex gap-2"

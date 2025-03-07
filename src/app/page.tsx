@@ -21,13 +21,13 @@ export default function Home() {
       {/* <Logos /> */}
       <Problem />
       <Solution />
-      <HowItWorks />
+      {/* <HowItWorks /> */}
       {/* <TestimonialsCarousel /> */}
-      <Features />
+      {/* <Features /> */}
       {/* <Testimonials /> */}
       {/* <Pricing /> */}
-      <FAQ />
-      <Blog />
+      {/* <FAQ /> */}
+      {/* <Blog /> */}
       <CTA />
       <Footer />
     </main>
