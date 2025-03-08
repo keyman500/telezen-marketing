@@ -13,8 +13,8 @@ export const siteConfig = {
   links: {
     email: "support@telezen-ai.com",
    // twitter: "https://twitter.com/magicuidesign",
-    discord: "https://discord.gg/87p2vpsat5",
-    github: "https://github.com/magicuidesign/magicui",
+    discord: "https://discord.gg/42c2fQ68",
+   // github: "https://github.com/magicuidesign/magicui",
    // instagram: "https://instagram.com/magicuidesign/",
   },
   header: [
@@ -214,49 +214,55 @@ export const siteConfig = {
     },
   ],
   footer: [
+    // {
+    //   title: "Product",
+    //   links: [
+    //     { href: "#", text: "Features", icon: null },
+    //     { href: "#", text: "Pricing", icon: null },
+    //     { href: "#", text: "Documentation", icon: null },
+    //     { href: "#", text: "API", icon: null },
+    //   ],
+    // },
+    // {
+    //   title: "Company",
+    //   links: [
+    //     { href: "#", text: "About Us", icon: null },
+    //     { href: "#", text: "Careers", icon: null },
+    //     { href: "#", text: "Blog", icon: null },
+    //     { href: "#", text: "Press", icon: null },
+    //     { href: "#", text: "Partners", icon: null },
+    //   ],
+    // },
+    // {
+    //   title: "Resources",
+    //   links: [
+    //     { href: "#", text: "Community", icon: null },
+    //     { href: "#", text: "Contact", icon: null },
+    //     { href: "#", text: "Support", icon: null },
+    //     { href: "#", text: "Status", icon: null },
+    //   ],
+    // },
     {
-      title: "Product",
+      title: undefined,
       links: [
-        { href: "#", text: "Features", icon: null },
-        { href: "#", text: "Pricing", icon: null },
-        { href: "#", text: "Documentation", icon: null },
-        { href: "#", text: "API", icon: null },
-      ],
-    },
-    {
-      title: "Company",
-      links: [
-        { href: "#", text: "About Us", icon: null },
-        { href: "#", text: "Careers", icon: null },
-        { href: "#", text: "Blog", icon: null },
-        { href: "#", text: "Press", icon: null },
-        { href: "#", text: "Partners", icon: null },
-      ],
-    },
-    {
-      title: "Resources",
-      links: [
-        { href: "#", text: "Community", icon: null },
-        { href: "#", text: "Contact", icon: null },
-        { href: "#", text: "Support", icon: null },
-        { href: "#", text: "Status", icon: null },
+        { href: "", text: "", icon: null },
       ],
     },
     {
       title: "Social",
       links: [
         {
-          href: "#",
+          href: "https://x.com/TeleZen_AI",
           text: "Twitter",
           icon: <FaTwitter />,
         },
+        // {
+        //   href: "#",
+        //   text: "Instagram",
+        //   icon: <RiInstagramFill />,
+        // },
         {
-          href: "#",
-          text: "Instagram",
-          icon: <RiInstagramFill />,
-        },
-        {
-          href: "#",
+          href: "https://www.youtube.com/@TeleZen-ai",
           text: "Youtube",
           icon: <FaYoutube />,
         },

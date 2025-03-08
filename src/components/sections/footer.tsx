@@ -2,6 +2,8 @@ import { Icons } from "@/components/icons";
 import { siteConfig } from "@/lib/config";
 import { ChevronRight } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
+import telezenLogo from "../../../public/telezen-logo.png";
 
 export default function Footer() {
   return (
@@ -12,7 +14,12 @@ export default function Footer() {
           title={siteConfig.name}
           className="relative mr-6 flex items-center space-x-2"
         >
-          <Icons.logo className="w-auto h-[40px]" />
+          {/* <Icons.logo className="w-auto h-[40px]" /> */}
+          <Image
+            src={telezenLogo}
+            alt="Telezen Logo"
+            className="w-auto h-[40px]"
+          />
           <span className="font-bold text-xl">{siteConfig.name}</span>
         </a>
 
@@ -45,7 +52,7 @@ export default function Footer() {
             </Link>{" "}
             - {siteConfig.description}
           </span>
-          <ul className="flex justify-start md:justify-end text-sm tracking-tight text-foreground">
+          {/* <ul className="flex justify-start md:justify-end text-sm tracking-tight text-foreground">
             <li className="mr-3 md:mx-4">
               <Link href="#" target="_blank" rel="noopener noreferrer">
                 Privacy Policy
@@ -56,7 +63,7 @@ export default function Footer() {
                 Terms of Service
               </Link>
             </li>
-          </ul>
+          </ul> */}
         </div>
       </div>
     </footer>
