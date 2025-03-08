@@ -244,7 +244,6 @@ export default function WaitlistPage() {
                   <div className="space-y-4 text-sm">
                     {[
                       "Early access to our AI call management platform",
-                      "Exclusive beta features and priority support",
                       "Special pricing for early adopters",
                       "Be part of shaping the future of call management"
                     ].map((benefit, index) => (
