@@ -9,38 +9,38 @@ import { motion } from "framer-motion";
 
 const features = [
   {
-    title: "Advanced AI Algorithms",
+    title: "Create Voice Agents",
     description:
-      "Our platform utilizes cutting-edge AI algorithms to provide accurate and efficient solutions for your business needs.",
+      "Create voice agents with custom prompts and and upload files to the agents knowledge base to use as context",
     className: "hover:bg-red-500/10 transition-all duration-500 ease-out",
     content: (
       <>
         <Safari
-          src={`/dashboard.png`}
-          url="https://acme.ai"
+          src={`/hero-image.png`}
+          url="https://telezen-ai.com"
           className="-mb-32 mt-4 max-h-64 w-full px-4 select-none drop-shadow-[0_0_28px_rgba(0,0,0,.1)] group-hover:translate-y-[-10px] transition-all duration-300"
         />
       </>
     ),
   },
   {
-    title: "Secure Data Handling",
+    title: "Add Phone Numbers",
     description:
-      "We prioritize your data security with state-of-the-art encryption and strict privacy protocols, ensuring your information remains confidential.",
+      "Add phone numbers to agents and start receiving calls. you can add phone number with twilio, vonage or request a phone number from our platform",
     className:
       "order-3 xl:order-none hover:bg-blue-500/10 transition-all duration-500 ease-out",
     content: (
       <Safari
-        src={`/dashboard.png`}
-        url="https://acme.ai"
+        src={`/add-phone-numbers.png`}
+        url="https://telezen-ai.com"
         className="-mb-32 mt-4 max-h-64 w-full px-4 select-none drop-shadow-[0_0_28px_rgba(0,0,0,.1)] group-hover:translate-y-[-10px] transition-all duration-300"
       />
     ),
   },
   {
-    title: "Seamless Integration",
-    description:
-      "Easily integrate our AI solutions into your existing workflows and systems for a smooth and efficient operation.",
+    title: "Create Contacts",
+      description:
+        "Create contacts with name and phone number. you can call multiple contacts at once with a click of a button.",
     className:
       "md:row-span-2 hover:bg-orange-500/10 transition-all duration-500 ease-out",
     content: (
@@ -56,25 +56,25 @@ const features = [
           width={800}
         />
         <Safari
-          src={`/dashboard.png`}
-          url="https://acme.ai"
+          src={`/contacts-page.png`}
+          url="https://telezen-ai.com"
           className="-mb-48 ml-12 mt-16 h-full px-4 select-none drop-shadow-[0_0_28px_rgba(0,0,0,.1)] group-hover:translate-x-[-10px] transition-all duration-300"
         />
       </>
     ),
   },
   {
-    title: "Customizable Solutions",
+    title: "Select a voice for your agent",
     description:
-      "Tailor our AI services to your specific needs with flexible customization options, allowing you to get the most out of our platform.",
+      "Choose a voice for your agent from Elevenlabs or Playht",
     className:
       "flex-row order-4 md:col-span-2 md:flex-row xl:order-none hover:bg-green-500/10 transition-all duration-500 ease-out",
     content: (
       <>
         <Ripple className="absolute -bottom-full" />
         <Safari
-          src={`/dashboard.png`}
-          url="https://acme.ai"
+          src={`/choose-voice.png`}
+          url="https://telezen-ai.com"
           className="-mb-32 mt-4 max-h-64 w-full px-4 select-none drop-shadow-[0_0_28px_rgba(0,0,0,.1)] group-hover:translate-y-[-10px] transition-all duration-300"
         />
       </>

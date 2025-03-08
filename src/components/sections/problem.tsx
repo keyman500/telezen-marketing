@@ -1,7 +1,7 @@
 import BlurFade from "@/components/magicui/blur-fade";
 import Section from "@/components/section";
 import { Card, CardContent } from "@/components/ui/card";
-import { BarChart, CheckCircle, Clock, Link, Phone, Shield } from "lucide-react";
+import { BarChart, CheckCircle, Clock, Link, Phone, Shield, MessageCircle } from "lucide-react";
 
 const problems = [
   {
@@ -23,7 +23,7 @@ const problems = [
     icon: CheckCircle,
   },
   {
-    title: "Real-Time Insights",
+    title: "Insights",
     description:
       "Gain actionable insights from call data analytics, helping you understand customer needs and improve service.",
     icon: BarChart,
@@ -31,14 +31,14 @@ const problems = [
   {
     title: "Seamless Integration",
     description:
-      "Integrate effortlessly with your existing tools, enhancing your workflow without disruption.",
+      "Allow your agents to call webhooks Integrate effortlessly with your existing tools, enhancing your workflow without disruption.",
     icon: Link,
   },
   {
-    title: "Enhanced Security",
+    title: "Chat with Your Data",
     description:
-      "Protect sensitive customer data with AI-driven security measures, ensuring compliance and peace of mind.",
-    icon: Shield,
+      "Engage in natural conversations with your data, leveraging AI to unlock insights and drive informed decisions.",
+    icon: MessageCircle,
   },
 ];  
 
