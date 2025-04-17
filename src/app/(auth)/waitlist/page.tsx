@@ -30,7 +30,7 @@ export default function WaitlistPage() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     if (!email || !email.includes("@")) {
       setSubmitStatus({
         type: "error",
@@ -86,9 +86,9 @@ export default function WaitlistPage() {
         <div className="absolute -top-[40%] -right-[60%] h-[1000px] w-[1000px] rounded-full bg-primary/5" />
         <div className="absolute -bottom-[30%] -left-[60%] h-[800px] w-[800px] rounded-full bg-primary/5" />
       </div>
-      
+
       {/* Logo and navigation */}
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
@@ -99,7 +99,7 @@ export default function WaitlistPage() {
           <span className="font-bold text-lg sm:text-xl">{siteConfig.name}</span>
         </Link>
       </motion.div>
-      
+
       <div className="w-full max-w-md mx-auto mt-16 sm:mt-0">
         {isSuccess ? (
           <motion.div
@@ -132,7 +132,7 @@ export default function WaitlistPage() {
                     <p>Stay tuned for exclusive updates and offers</p>
                   </div>
                 </div>
-                
+
                 <div className="flex flex-col space-y-3">
                   <Link
                     href="/"
@@ -140,8 +140,8 @@ export default function WaitlistPage() {
                   >
                     Return to homepage
                   </Link>
-                  <Button 
-                    variant="outline" 
+                  <Button
+                    variant="outline"
                     onClick={() => setIsSuccess(false)}
                   >
                     Add another email
@@ -158,13 +158,20 @@ export default function WaitlistPage() {
           >
             <Card className="border-none shadow-lg">
               <CardHeader className="space-y-2 text-center">
-                <motion.div 
+                <motion.div
                   className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-primary/10"
                   initial={{ scale: 0.8, opacity: 0 }}
                   animate={{ scale: 1, opacity: 1 }}
                   transition={{ duration: 0.5, delay: 0.4 }}
                 >
-                  <Icons.logo className="h-10 w-10 text-primary" />
+                  {/* <Icons.logo className="h-10 w-10 text-primary" /> */}
+                  <Image
+                    src="/telezen-logo.png"
+                    alt="Telezen Logo"
+                    className="h-6 w-6"
+                    width={24}
+                    height={24}
+                  />
                 </motion.div>
                 <CardTitle className="text-xl sm:text-2xl font-bold">Join Our Waitlist</CardTitle>
                 <CardDescription className="text-muted-foreground text-sm sm:text-base">
@@ -186,7 +193,7 @@ export default function WaitlistPage() {
                       disabled={isSubmitting}
                     />
                   </div>
-                  
+
                   {submitStatus.type && (
                     <motion.div
                       initial={{ opacity: 0, height: 0 }}
@@ -212,9 +219,9 @@ export default function WaitlistPage() {
                       )}
                     </motion.div>
                   )}
-                  
-                  <Button 
-                    type="submit" 
+
+                  <Button
+                    type="submit"
                     className="w-full"
                     disabled={isSubmitting}
                   >
@@ -228,7 +235,7 @@ export default function WaitlistPage() {
                     )}
                   </Button>
                 </form>
-                
+
                 <div className="mt-8 space-y-6">
                   <div className="relative">
                     <div className="absolute inset-0 flex items-center">
@@ -240,14 +247,14 @@ export default function WaitlistPage() {
                       </span>
                     </div>
                   </div>
-                  
+
                   <div className="space-y-4 text-sm">
                     {[
                       "Early access to our AI call management platform",
                       "Special pricing for early adopters",
                       "Be part of shaping the future of call management"
                     ].map((benefit, index) => (
-                      <motion.div 
+                      <motion.div
                         key={index}
                         className="flex gap-2"
                         initial={{ opacity: 0, x: -10 }}
@@ -260,7 +267,7 @@ export default function WaitlistPage() {
                     ))}
                   </div>
                 </div>
-                
+
                 {/* <div className="mt-6 text-center text-sm text-muted-foreground">
                   Already have an account?{" "}
                   <Link href="/login" className="text-primary hover:underline">
@@ -272,7 +279,7 @@ export default function WaitlistPage() {
           </motion.div>
         )}
       </div>
-      
+
       {/* <motion.div 
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}

@@ -72,7 +72,14 @@ export default function Header() {
                   "w-full sm:w-auto text-background flex gap-2"
                 )}
               >
-                <Icons.logo className="h-6 w-6" />
+                {/* <Icons.logo className="h-6 w-6" /> */}
+                <Image
+                  src="/telezen-logo.png"
+                  alt="Telezen Logo"
+                  className="h-6 w-6"
+                  width={24}
+                  height={24}
+                />
                 Sign up for the waitlist
               </Link>
             </div>
