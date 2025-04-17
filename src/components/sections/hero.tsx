@@ -7,7 +7,7 @@ import HeroVideoDialog from "@/components/magicui/hero-video";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
-
+import Image from "next/image";
 const ease = [0.16, 1, 0.3, 1];
 
 function HeroPill() {
@@ -55,7 +55,7 @@ function HeroTitles() {
           staggerChildren: 0.2,
         }}
       >
-        {["Create", "a", "dashboard", "for", "your", "AI", "Agency","Clients"].map(
+        {["Create", "a", "dashboard", "for", "your", "AI", "Agency", "Clients"].map(
           (text, index) => (
             <motion.span
               key={index}
@@ -63,14 +63,14 @@ function HeroTitles() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{
-              duration: 0.8,
-              delay: index * 0.2,
-              ease,
-            }}
-          >
-            {text}
-          </motion.span>
-        ))}
+                duration: 0.8,
+                delay: index * 0.2,
+                ease,
+              }}
+            >
+              {text}
+            </motion.span>
+          ))}
       </motion.h1>
       <motion.p
         className="mx-auto max-w-xl text-center text-lg leading-7 text-muted-foreground sm:text-xl sm:leading-9 text-balance"
@@ -82,7 +82,7 @@ function HeroTitles() {
           ease,
         }}
       >
-        Seamless Conversations: Let AI Handle Your Calls.
+        Create custom white label dashboards for your clients. Bring your own Vapi API key and assistants
       </motion.p>
     </div>
   );
@@ -104,7 +104,14 @@ function HeroCTA() {
             "w-full sm:w-auto text-background flex gap-2"
           )}
         >
-          <Icons.logo className="h-6 w-6" />
+          {/* <Icons.logo className="h-6 w-6" /> */}
+          <Image
+            src="/telezen-logo.png"
+            alt="Telezen Logo"
+            className="h-6 w-6"
+            width={24}
+            height={24}
+          />
           {/* Get started for free */}
           Sign up for the waitlist
         </Link>
