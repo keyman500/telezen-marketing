@@ -1,63 +1,69 @@
 import BlurFade from "@/components/magicui/blur-fade";
 import Section from "@/components/section";
 import { Card, CardContent } from "@/components/ui/card";
-import { BarChart, CheckCircle, Clock, Link, Phone, Shield, MessageCircle } from "lucide-react";
+import { LayoutDashboard, KeyRound, Settings, BarChart3, MessagesSquare, Users, LucideIcon } from "lucide-react";
 
-const problems = [
+interface Benefit {
+  title: string;
+  description: string;
+  icon: LucideIcon;
+}
+
+const benefits: Benefit[] = [
   {
-    title: "24/7 Availability",
+    title: "Client-Specific Dashboards",
     description:
-      "With AI handling your calls, you can be available around the clock, ensuring no opportunity is missed, even outside of business hours.",
-    icon: Clock,
+      "Easily create and manage dedicated dashboards for each of your clients, providing them with a tailored experience.",
+    icon: LayoutDashboard,
   },
   {
-    title: "Automated Efficiency",
+    title: "BYO VAPI Integration",
     description:
-      "Automate routine inquiries and appointment scheduling, freeing up your time for more critical tasks.",
-    icon: Phone,
+      "Bring your existing VAPI API key to power the voice agents within your client dashboards seamlessly.",
+    icon: KeyRound,
   },
   {
-    title: "Scalability",
+    title: "Client Agent Customization",
     description:
-      "Easily scale your call management as your business grows, with AI handling increased call volumes effortlessly.",
-    icon: CheckCircle,
+      "Empower your clients to directly edit and customize their AI voice agents through their dedicated dashboard.",
+    icon: Settings,
   },
   {
-    title: "Insights",
+    title: "Performance Analytics",
     description:
-      "Gain actionable insights from call data analytics, helping you understand customer needs and improve service.",
-    icon: BarChart,
+      "Provide clients with clear, actionable analytics on their agent's performance directly within their dashboard.",
+    icon: BarChart3,
   },
   {
-    title: "Seamless Integration",
+    title: "Conversational Insights",
     description:
-      "Allow your agents to call webhooks Integrate effortlessly with your existing tools, enhancing your workflow without disruption.",
-    icon: Link,
+      "Enable clients to interact with their call data and analytics through an intuitive chat interface within their dashboard.",
+    icon: MessagesSquare,
   },
   {
-    title: "Chat with Your Data",
+    title: "Scalable Client Management",
     description:
-      "Engage in natural conversations with your data, leveraging AI to unlock insights and drive informed decisions.",
-    icon: MessageCircle,
+      "Efficiently manage multiple clients and their voice agent configurations through a centralized platform.",
+    icon: Users,
   },
-];  
+];
 
 export default function Component() {
   return (
     <Section
-      title="Key Benefits of AI Call Management"
-      subtitle="Transforming how you manage calls with AI."
+      title="Build Custom Voice Agent Dashboards for Your Clients"
+      subtitle="Empower clients with agent management, analytics, and insights using your VAPI key."
     >
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
-        {problems.map((problem, index) => (
+        {benefits.map((benefit, index) => (
           <BlurFade key={index} delay={0.2 + index * 0.2} inView>
             <Card className="bg-background border-none shadow-none">
               <CardContent className="p-6 space-y-4">
                 <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
-                  <problem.icon className="w-6 h-6 text-primary" />
+                  <benefit.icon className="w-6 h-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-semibold">{problem.title}</h3>
-                <p className="text-muted-foreground">{problem.description}</p>
+                <h3 className="text-xl font-semibold">{benefit.title}</h3>
+                <p className="text-muted-foreground">{benefit.description}</p>
               </CardContent>
             </Card>
           </BlurFade>
