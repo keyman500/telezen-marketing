@@ -20,7 +20,7 @@ export default function Home() {
       <Hero />
       {/* <Logos /> */}
       <Problem />
-      <Solution />
+      {/* <Solution /> */}
       {/* <HowItWorks /> */}
       {/* <TestimonialsCarousel /> */}
       {/* <Features /> */}
